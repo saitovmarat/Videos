@@ -68,6 +68,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
+  text-underline-offset: 1px;
 }
 
 .button:focus {
@@ -75,7 +76,8 @@ ol {
 }
 
 .button:focus-visible {
-  outline: double #FFF 3px;
+  outline: double #FFF 1px;
+  outline-offset: 1px;
 }
 
 .content {
@@ -195,6 +197,7 @@ ol {
 
 .search-form__label:hover > .search-form__label-text {
   text-decoration: underline;
+  text-underline-offset: 1px;
 }
 
 .search-form__submit-button {
@@ -235,6 +238,7 @@ ol {
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #FFF;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:focus {
@@ -254,11 +258,13 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   box-sizing: border-box;
   height: 298px;
-  padding-bottom: 2px;
   overflow-y: auto;
+}
+
+.content__list-item {
+  margin-bottom: 30px;
 }
 
 .content__video-card-title {
@@ -275,9 +281,10 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 100%;
-  padding: 2px 0 4px;
+  padding: 2px 6px 4px 0;
 }
 
 .content__video-card-description {
@@ -309,6 +316,7 @@ ol {
 .more-button {
   min-width: 399px;
   min-height: 34px;
+  margin-bottom: 2px;
 }
 
 .preloader {
